@@ -1,5 +1,12 @@
 <?php 
 $bdd = PDO('mysql:host=localhost;dbname=messagerie;charset=utf8;', 'root', '')
+if(isset($_POST['valider'])){
+    if(!empty($_POST['pseudo']) AND !empty($_POST['message'])){
+
+    }elese{
+        echo "Veuillez compléter tous les champs...";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html>
